@@ -1,4 +1,21 @@
-h1 (
-text-align: center;
+html{
+    text-align: center;
+}
 
-)
+.container-fluid {
+    background-color: gray;
+    text-align: center;
+}
+
+#firstname , #lastname, #ID , #Title, #AnnualSalary{
+    display: inline-block
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.monthlySalary {
+    
+
+}
