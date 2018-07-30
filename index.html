@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="client.js"></script>
-    <title>Ahmed's Nifty Calculator</title>
+    <title>Ahmed's Nifty Salary Calculator</title>
 </head>
-
-
 
 <body>
     <div class="container-fluid">
@@ -20,30 +18,26 @@
     </div>
 
     <div class=container1>
-
-        <div class="addEmployee"> Add Employee </div>
+    <div class="addEmployee"> Add Employee </div>
 
         <input id="firstNameInput" type="text" placeholder="First Name:" />
         <input id="lastNameInput" type="text" placeholder="Last Name:" />
         <input id="idInput" type="number" placeholder="ID:" />
         <input id="titleInput" type="text" placeholder="Title:" />
         <input id="annualSalaryInput" type="number" placeholder="Annual Salary:" />
-
-
-        
+        <button id="submit">Submit</button>
     </div>
-    <button id="submit">Submit</button>
+    
 
     <div class="container2">
-        <h3> Employees</h3>
-
-        <table id="Table">
+    <h3> Employees</h3>
+         <table id="Table">
             <thead id="tableheader">
                 <th id="firstName">First Name</th>
                 <th id="lastName">Last Name</th>
                 <th id="ID">ID</th>
                 <th id="title">Title</th>
-                <th id="annualsalary" name="salary">Annual Salary</th>
+                <th id="salary">Annual Salary</th>
             </thead>
 
             <tbody>
@@ -53,54 +47,33 @@
                     <td>4521</td>
                     <td>Team Lead</td>
                     <td id="salary">80,0000</td>
-                    <td>
-                        <input type="button" id="removeRow1" value='Remove Employee' />
-                    </td>
-                    </tr>
+                    <td><input type="button" id="removeRow1" value='Remove Employee'/></td>
+                </tr>
 
 
-                    <tr id="secondRow">
+                <tr id="secondRow">
                         <td>Maurice</td>
                         <td>Moss</td>
                         <td>8724</td>
                         <td>Support Team</td>
-                        <td name="salary" >80,0000</td>
-                        <td>
-                            <input type="button" id="removeRow2" value='Remove Employee' />
-                        </td>
-                    </tr>
+                        <td name="salary">58,0000</td>
+                        <td><input type="button" id="removeRow2" value='Remove Employee' /></td>
+                </tr>
 
-                    <tr id="thirdRow">
+                <tr id="thirdRow">
                         <td>Roy</td>
                         <td>Smith</td>
                         <td>9623</td>
                         <td>Quality Assurance </td>
                         <td name="salary">48,000</td>
-                        <td>
-                            <input type="button" id="removeRow3" value='Remove Employee' />
-                        </td>
-                    </tr>
-
-
-
-
-
-
+                        <td> <input type="button" id="removeRow3" value='Remove Employee' /></td>
+                </tr>
             </tbody>
 
         </table>
-
-        <div class="monthlySalary">Monthly Salary Cost:</div>
-
-
-
-
+        <div id="container">
+            <div id="monthlySalary">Monthly Salary Cost:</div>
+        </div>
     </div>
-
-
-
-
-
 </body>
-
 </html>

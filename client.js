@@ -1,14 +1,6 @@
 $(document).ready(readyNow);
 function readyNow(){
 
-//Data Collection after input submit 
-
-
-
-
-
-
-
 
 //'Add' Row function 
 
@@ -35,6 +27,19 @@ $('#submit').on('click' , addRow );
 
 
 
+/*Clear input fields after data submitted
+
+function clearInputfields(){
+$('#firstNameInput').val('');
+$('#lastNameInput').val('');
+$('#idInput').val('');
+$('#titleInput').val('');
+$('#annualSalaryInput').val('');
+}
+
+clearInputfields();
+*/
+
 
 // Delete First function and button
 function deleteRow1(){
@@ -42,12 +47,7 @@ let row1 =document.getElementById('Table');
 row1.deleteRow(1);
 }
 
-
-
-
 $('#removeRow1').on('click' , deleteRow1 );
-
-
 
 // Delete Second Row function and button
 
@@ -60,7 +60,6 @@ $('#removeRow2').on('click' , deleteRow2 );
     
     
 
-
 // Delete Third Row function and button
 
 function deleteRow3(){
@@ -71,24 +70,6 @@ row3.deleteRow(3);
 $('#removeRow3').on('click' , deleteRow3 );
         
   
-let monthlySalary = 0;
-
-
 
 
 }
-
-
-
-/* //Clear input fields after data submitted
-
-function clearInputfields(){
-    document.getElementByID('firstNameInput').remove();
-    $('#lastNameInput').val('');
-    $('#idInput').val('');
-    $('#titleInput').val('');
-    $('#annualSalaryInput').val('');
-    }
-    clearInputfields();
-    $('#submit').on('click' , clearInputfields );
- */

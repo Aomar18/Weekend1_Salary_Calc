@@ -1,5 +1,6 @@
-html{
+html  {
     text-align: center;
+    
 }
 
 .container-fluid {
@@ -12,10 +13,7 @@ html{
 }
 
 table, th, td {
-    border: 1px solid black;
-}
-
-.monthlySalary {
-    
+    border: 2px solid black;
 
 }
+
